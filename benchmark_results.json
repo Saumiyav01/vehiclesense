@@ -1,0 +1,160 @@
+{
+  "measured_at": "2026-10-31T18:48:08Z",
+  "environment": {
+    "python": "3.12.12",
+    "database": "DuckDB + SQLite",
+    "server": "FastAPI/Uvicorn"
+  },
+  "bootstrap_ms": 30.97,
+  "seeded_telemetry_rows": 5100,
+  "event_count": 5,
+  "dtc_count": 1,
+  "matched_baseline_trips": 24,
+  "query_count": 20,
+  "query_latency_ms": {
+    "mean": 6.95,
+    "max": 21.81
+  },
+  "normal_ingestion_msg_s_measured": 120.0,
+  "burst_ingestion_msg_s_measured": 1457.1,
+  "burst_target_msg_s": 5000,
+  "governor_during_burst": {
+    "cpu_percent": 93.5,
+    "process_ram_mb": 162.8,
+    "system_ram_percent": 18.8,
+    "system_ram_total_mb": 4096.0,
+    "ingestion_msg_s": 1594.5,
+    "query_latency_p95_ms": 20.3,
+    "query_samples": 20,
+    "governor": "Shedding optional SLM",
+    "slm_allowed": false,
+    "shed_reasons": [
+      "CPU above 75%",
+      "ingestion above 300 msg/s"
+    ],
+    "burst": true,
+    "slm_status": "Shed by governor",
+    "database": "DuckDB + SQLite \u00b7 connected",
+    "network": "Local only \u00b7 no cloud services",
+    "uptime_s": 9.1
+  },
+  "governor_after_burst": {
+    "cpu_percent": 7.7,
+    "process_ram_mb": 162.7,
+    "system_ram_percent": 18.8,
+    "system_ram_total_mb": 4096.0,
+    "ingestion_msg_s": 120.8,
+    "query_latency_p95_ms": 20.3,
+    "query_samples": 20,
+    "governor": "Normal",
+    "slm_allowed": true,
+    "shed_reasons": [],
+    "burst": false,
+    "slm_status": "Qwen2.5-0.5B \u00b7 not installed; deterministic fallback",
+    "database": "DuckDB + SQLite \u00b7 connected",
+    "network": "Local only \u00b7 no cloud services",
+    "uptime_s": 13.2
+  },
+  "queries": [
+    {
+      "question": "Why did my battery temperature increase, and what happened before the warning?",
+      "intent": "temporal_correlation",
+      "latency_ms": 2.94
+    },
+    {
+      "question": "Why has my vehicle range decreased?",
+      "intent": "efficiency_attribution",
+      "latency_ms": 20.55
+    },
+    {
+      "question": "Are there recurring abnormalities?",
+      "intent": "recurrence_scan",
+      "latency_ms": 3.2
+    },
+    {
+      "question": "Explain the last diagnostic fault.",
+      "intent": "last_dtc_explain",
+      "latency_ms": 2.04
+    },
+    {
+      "question": "Why did my battery temperature increase, and what happened before the warning?",
+      "intent": "temporal_correlation",
+      "latency_ms": 1.83
+    },
+    {
+      "question": "Why has my vehicle range decreased?",
+      "intent": "efficiency_attribution",
+      "latency_ms": 21.2
+    },
+    {
+      "question": "Are there recurring abnormalities?",
+      "intent": "recurrence_scan",
+      "latency_ms": 3.18
+    },
+    {
+      "question": "Explain the last diagnostic fault.",
+      "intent": "last_dtc_explain",
+      "latency_ms": 2.03
+    },
+    {
+      "question": "Why did my battery temperature increase, and what happened before the warning?",
+      "intent": "temporal_correlation",
+      "latency_ms": 1.94
+    },
+    {
+      "question": "Why has my vehicle range decreased?",
+      "intent": "efficiency_attribution",
+      "latency_ms": 19.77
+    },
+    {
+      "question": "Are there recurring abnormalities?",
+      "intent": "recurrence_scan",
+      "latency_ms": 2.88
+    },
+    {
+      "question": "Explain the last diagnostic fault.",
+      "intent": "last_dtc_explain",
+      "latency_ms": 1.82
+    },
+    {
+      "question": "Why did my battery temperature increase, and what happened before the warning?",
+      "intent": "temporal_correlation",
+      "latency_ms": 2.81
+    },
+    {
+      "question": "Why has my vehicle range decreased?",
+      "intent": "efficiency_attribution",
+      "latency_ms": 19.52
+    },
+    {
+      "question": "Are there recurring abnormalities?",
+      "intent": "recurrence_scan",
+      "latency_ms": 3.03
+    },
+    {
+      "question": "Explain the last diagnostic fault.",
+      "intent": "last_dtc_explain",
+      "latency_ms": 1.9
+    },
+    {
+      "question": "Why did my battery temperature increase, and what happened before the warning?",
+      "intent": "temporal_correlation",
+      "latency_ms": 1.73
+    },
+    {
+      "question": "Why has my vehicle range decreased?",
+      "intent": "efficiency_attribution",
+      "latency_ms": 21.81
+    },
+    {
+      "question": "Are there recurring abnormalities?",
+      "intent": "recurrence_scan",
+      "latency_ms": 2.87
+    },
+    {
+      "question": "Explain the last diagnostic fault.",
+      "intent": "last_dtc_explain",
+      "latency_ms": 1.95
+    }
+  ]
+}

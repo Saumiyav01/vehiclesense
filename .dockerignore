@@ -1,0 +1,6 @@
+data/
+.deps/
+__pycache__/
+.pytest_cache/
+*.pyc
+benchmark_results.json
